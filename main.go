@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/ErMamone/GoDesde0/archivos"
-)
+import "github.com/ErMamone/GoDesde0/funciones"
 
 func main() {
 	/*
@@ -41,8 +39,10 @@ func main() {
 
 		iteraciones.Iterar()
 
+		archivos.LeerArchivo()
+
 	*/
 
-	archivos.LeerArchivo()
+	funciones.LlamarClosures()
 
 }
