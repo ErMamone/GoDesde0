@@ -13,11 +13,11 @@ func TablaDelN() {
 	var err error
 
 	for {
-		fmt.Println("Ingrese numero 1")
+		fmt.Println("Ingrese un numero")
 		if scanner.Scan() {
 			num, err = strconv.Atoi(scanner.Text())
 			if err != nil {
-				print("Error cargando el numero, error: " + err.Error())
+				print("Error cargando el numero " + err.Error() + ", porfavor intente de nuevo: \n")
 				continue
 			} else {
 				break
