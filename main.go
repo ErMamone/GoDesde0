@@ -1,6 +1,8 @@
 package main
 
-import "github.com/ErMamone/GoDesde0/ejercicios"
+import (
+	"github.com/ErMamone/GoDesde0/archivos"
+)
 
 func main() {
 	/*
@@ -41,6 +43,6 @@ func main() {
 
 	*/
 
-	ejercicios.TablaDelN()
+	archivos.LeerArchivo()
 
 }
