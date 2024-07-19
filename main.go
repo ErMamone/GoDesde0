@@ -43,6 +43,6 @@ func main() {
 
 	*/
 
-	funciones.LlamarClosures()
+	funciones.Exponenciar(2)
 
 }
