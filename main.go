@@ -1,10 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"github.com/ErMamone/GoDesde0/ejercicios"
-	"runtime"
-)
+import "github.com/ErMamone/GoDesde0/teclado"
 
 func main() {
 	/*
@@ -22,21 +18,24 @@ func main() {
 		if os := runtime.GOOS; os == "Linux." {
 			que es esta gronchada go wtf????
 		}
+
+		switch os := runtime.GOOS; os {
+		case "linux":
+			fmt.Println("Estas en linux papa")
+			break
+		case "windows":
+			fmt.Println("Estas en Windows papaaa")
+		case "darwin":
+			fmt.Println("Estas en Darwin")
+		default:
+			fmt.Printf("Estas en %s\n", os)
+		}
+
+		num, res := ejercicios.RespuestaInteger("200")
+
+		fmt.Printf("El numero final es: %d y %s", num, res)
+
 	*/
 
-	switch os := runtime.GOOS; os {
-	case "linux":
-		fmt.Println("Estas en linux papa")
-		break
-	case "windows":
-		fmt.Println("Estas en Windows papaaa")
-	case "darwin":
-		fmt.Println("Estas en Darwin")
-	default:
-		fmt.Printf("Estas en %s\n", os)
-	}
-
-	num, res := ejercicios.RespuestaInteger("200")
-
-	fmt.Printf("El numero final es: %d y %s", num, res)
+	teclado.IngresarNumeros()
 }
