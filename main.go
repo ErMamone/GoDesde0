@@ -1,6 +1,6 @@
 package main
 
-import "github.com/ErMamone/GoDesde0/teclado"
+import "github.com/ErMamone/GoDesde0/ejercicios"
 
 func main() {
 	/*
@@ -35,7 +35,12 @@ func main() {
 
 		fmt.Printf("El numero final es: %d y %s", num, res)
 
+		teclado.IngresarNumeros()
+
+		iteraciones.Iterar()
+
 	*/
 
-	teclado.IngresarNumeros()
+	ejercicios.TablaDelN()
+
 }
