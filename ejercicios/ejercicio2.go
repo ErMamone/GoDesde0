@@ -9,18 +9,23 @@ import (
 
 func TablaDelN() {
 	scanner := bufio.NewScanner(os.Stdin)
-	fmt.Println("Ingrese numero 1")
+	var num int
+	var err error
 
-	if scanner.Scan() {
-		num, err := strconv.Atoi(scanner.Text())
-
-		if err != nil {
-			panic("Error cargando el numero, error: " + err.Error())
-		} else {
-			for i := 1; i < 11; i++ {
-				fmt.Printf("Tabla del %d!\n %d x %d = %d\n", num, num, i, num*i)
+	for {
+		fmt.Println("Ingrese numero 1")
+		if scanner.Scan() {
+			num, err = strconv.Atoi(scanner.Text())
+			if err != nil {
+				print("Error cargando el numero, error: " + err.Error())
+				continue
+			} else {
+				break
 			}
 		}
 	}
 
+	for i := 1; i < 11; i++ {
+		fmt.Printf("Tabla del %d!\n %d x %d = %d\n", num, num, i, num*i)
+	}
 }
