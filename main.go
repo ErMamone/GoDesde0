@@ -2,13 +2,13 @@ package main
 
 import (
 	"fmt"
+	"github.com/ErMamone/GoDesde0/ejercicios"
 	"runtime"
 )
 
 func main() {
 	/*
 		estado, texto := variables.ConvertirATexto(200)
-
 		fmt.Printf("Estado: %t - Texto: %s", estado, texto)
 
 		os := runtime.GOOS
@@ -19,10 +19,9 @@ func main() {
 			fmt.Printf("Estas andando en %s perrooooooo", os)
 		}
 
-
-			if os := runtime.GOOS; os == "Linux." {
-				que es esta gronchada go wtf????
-			}
+		if os := runtime.GOOS; os == "Linux." {
+			que es esta gronchada go wtf????
+		}
 	*/
 
 	switch os := runtime.GOOS; os {
@@ -36,4 +35,8 @@ func main() {
 	default:
 		fmt.Printf("Estas en %s\n", os)
 	}
+
+	num, res := ejercicios.RespuestaInteger("200")
+
+	fmt.Printf("El numero final es: %d y %s", num, res)
 }
