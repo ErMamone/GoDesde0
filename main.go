@@ -1,7 +1,5 @@
 package main
 
-import "github.com/ErMamone/GoDesde0/usuarios"
-
 func main() {
 	/*
 		estado, texto := variables.ConvertirATexto(200)
@@ -48,7 +46,20 @@ func main() {
 		array_slice.Capacidad()
 
 		maps.MostrarMapas()
+
+		usuarios.AltaUsuario()
+
+		//Basicamente:
+		//Se puede tener una interfaz "implementada" a partir de sus metodos en una clase
+		//Desde otra clase, se llama una funcion de la interfaz y por parametros recibimos el objeto con la interfaz "implementada"
+		//Entonces el metodo puede ser generico desde una funcion para varios objetos de clases que implementen esta inferfaz
+		//Ejemplo: metodo compra y tenes las clases credito y debito, entonces saca la plata de diferentes formas, pero sigue siendo desde la misma interfaz
+		//En definitiva useless, sirve para reescribir algo que usas 200 veces, no para cosas basicas de 1 vez sola.
+		Pedro := new(modelos.Hombre)
+		interfaces.HumanosRespirando(Pedro)
+
+		Roberta := new(modelos.Mujer)
+		interfaces.HumanosRespirando(Roberta)
 	*/
 
-	usuarios.AltaUsuario()
 }
