@@ -1,6 +1,6 @@
 package main
 
-import "github.com/ErMamone/GoDesde0/array_slice"
+import "github.com/ErMamone/GoDesde0/maps"
 
 func main() {
 	/*
@@ -44,8 +44,10 @@ func main() {
 		funciones.Exponenciar(2)
 
 		array_slice.MostrarArrays()
+
+		array_slice.Capacidad()
 	*/
 
-	array_slice.Capacidad()
+	maps.MostrarMapas()
 
 }
