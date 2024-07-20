@@ -1,6 +1,6 @@
 package main
 
-import "github.com/ErMamone/GoDesde0/maps"
+import "github.com/ErMamone/GoDesde0/usuarios"
 
 func main() {
 	/*
@@ -46,8 +46,9 @@ func main() {
 		array_slice.MostrarArrays()
 
 		array_slice.Capacidad()
+
+		maps.MostrarMapas()
 	*/
 
-	maps.MostrarMapas()
-
+	usuarios.AltaUsuario()
 }
