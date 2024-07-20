@@ -1,6 +1,6 @@
 package main
 
-import "github.com/ErMamone/GoDesde0/funciones"
+import "github.com/ErMamone/GoDesde0/array_slice"
 
 func main() {
 	/*
@@ -41,8 +41,11 @@ func main() {
 
 		archivos.LeerArchivo()
 
+		funciones.Exponenciar(2)
+
+		array_slice.MostrarArrays()
 	*/
 
-	funciones.Exponenciar(2)
+	array_slice.Capacidad()
 
 }
