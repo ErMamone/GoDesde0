@@ -1,7 +1,5 @@
 package main
 
-import "github.com/ErMamone/GoDesde0/panic_defer"
-
 func main() {
 	/*
 		estado, texto := variables.ConvertirATexto(200)
@@ -62,11 +60,12 @@ func main() {
 
 		Roberta := new(modelos.Mujer)
 		interfaces.HumanosRespirando(Roberta)
+
+		//E GOD, NO SABIA ESTO, FUNCIONO EL REPASO
+		panic_defer.DeferMomentus()
+
+		//Parecido al try, catch and finally pero no tan robusto
+		panic_defer.EjemploPanic()
 	*/
 
-	//E GOD, NO SABIA ESTO, FUNCIONO EL REPASO
-	panic_defer.DeferMomentus()
-
-	//Parecido al try, catch and finally pero no tan robusto
-	panic_defer.EjemploPanic()
 }
