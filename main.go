@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"github.com/ErMamone/GoDesde0/rutinas"
+)
+
 func main() {
 	/*
 		estado, texto := variables.ConvertirATexto(200)
@@ -67,5 +72,19 @@ func main() {
 		//Parecido al try, catch and finally pero no tan robusto
 		panic_defer.EjemploPanic()
 	*/
+	canal := make(chan bool)
+	//Go routines (go antes de una llamada a un metodo) = async await de js????
+	go rutinas.MiNombreLento("Juan Carlos", canal)
+	defer func() { <-canal }()
+	fmt.Println("Alooo")
 
+	//<-canal
+
+	//estado := <-canal
+
+	//if estado {
+	//	fmt.Println("Estado! es true: ", estado)
+	//} else {
+	//	fmt.Println("Estado! es false: ", estado)
+	//}
 }
